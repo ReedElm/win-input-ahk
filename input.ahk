@@ -30,8 +30,8 @@ SetCapsLockState, AlwaysOff
 ; Context: StarCraft II
 #IfWinActive ahk_class StarCraft II
 ; Modifier wildcards ensure compatbility with TheCore Lite etc.
-*F13::F5 
-*F14::F6
+*F13::k
+*F14::i
 
 ; Other/None:
 #IfWinActive
