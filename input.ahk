@@ -16,7 +16,7 @@ SetCapsLockState, AlwaysOff
 ; and serves as a workaround to intercept global Windows built-ins such as alt+tab window switching, 
 ; while allowing us to turn them back on for contexts where the behavior is desired (such as the desktop).
 ;
-; The F13/F14 mappings are considered intermediates. They aren't physically present on modern keyboard,
+; The F13/F14 mappings are considered intermediates. They aren't physically present on modern keyboards,
 ; do not correspond to any built-in actions in Windows, and often cannot be assigned in-app.
 ;
 ; Instead, intermediates are remapped below to standard keys. This preempts cyclic binds,
