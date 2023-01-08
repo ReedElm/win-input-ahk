@@ -5,6 +5,22 @@ SendMode Input
 ; Ensure capslock is off at all times
 SetCapsLockState, AlwaysOff
 
+
+;
+; Support German Umlauts on a US keyboard & layout
+;
+; ... by emulating the respective binds used by Windows' US-International
+;
+>!q::Send ä
++>!q::Send Ä
+>!y::Send ü
++>!y::Send Ü
+>!p::Send ö
++>!p::Send Ö
+>!s::Send ß
+>!5::Send €
+
+
 ;
 ; Repurpose Capslock, sometimes Tab
 ;
