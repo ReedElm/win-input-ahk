@@ -37,30 +37,26 @@ SetCapsLockState, AlwaysOff
 ; The F13/F14 mappings are considered intermediates. They aren't physically present on modern keyboards,
 ; do not correspond to any built-in actions in Windows, and often cannot be assigned in-app.
 ;
-; Instead, intermediates are remapped below to standard keys. This preempts cyclic binds,
-; (some) context-specific conflicts, and undesired input outcomes that might otherwise
-; occur when the script is not running.
+; Instead, intermediates are remapped to standard keys depending on context.
+; This preempts cyclic binds, (some) context-specific conflicts, and undesired input outcomes
+; that might otherwise occur when the script is not running.
 ;
 
-;
-; Remap intermediates to desired actions depending on context:
-;
-
-; Context: Emacs
+; Emacs
 #IfWinActive ahk_class Emacs
 F13::Escape
 
-; Context: StarCraft II
+; StarCraft II
 #IfWinActive ahk_class StarCraft II
 ; Modifier wildcards ensure compatbility with TheCore Lite etc.
 *F13::k
 *F14::i
 
-; Context: World of Warcraft
+; World of Warcraft
 #IfWinActive ahk_class GxWindowClass
 F13::Control
 
-; Context: Escape from Tarkov
+; Escape from Tarkov
 #IfWinActive ahk_exe EscapeFromTarkov.exe
 F13::k
 
