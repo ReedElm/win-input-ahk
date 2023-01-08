@@ -1,2 +1,2 @@
 # win-input-ahk
-My Windows input mappings
+My input mappings on Windows
