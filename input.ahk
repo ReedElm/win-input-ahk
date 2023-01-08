@@ -6,6 +6,8 @@ SendMode Input
 SetCapsLockState, AlwaysOff
 
 ;
+; Repurpose Capslock, sometimes Tab
+;
 ; Keys remapped on the OS level:
 ; 	Capslock -> F13
 ; 	Tab -> F14
@@ -20,12 +22,17 @@ SetCapsLockState, AlwaysOff
 ; do not correspond to any built-in actions in Windows, and often cannot be assigned in-app.
 ;
 ; Instead, intermediates are remapped below to standard keys. This preempts cyclic binds,
-; (some) context-specific conflicts, and undesired input outcomes while this script is not running.
+; (some) context-specific conflicts, and undesired input outcomes that might otherwise
+; occur when the script is not running.
 ;
 
 ;
 ; Remap intermediates to desired actions depending on context:
 ;
+
+; Context: Emacs
+#IfWinActive ahk_class Emacs
+F13::Escape
 
 ; Context: StarCraft II
 #IfWinActive ahk_class StarCraft II
@@ -33,7 +40,14 @@ SetCapsLockState, AlwaysOff
 *F13::k
 *F14::i
 
+; Context: World of Warcraft
+#IfWinActive ahk_class GxWindowClass
+F13::Control
+
+; Context: Escape from Tarkov
+#IfWinActive ahk_exe EscapeFromTarkov.exe
+F13::k
+
 ; Other/None:
 #IfWinActive
-F13::Escape ; vim
 F14::Tab ; Restore default behavior for Tab
