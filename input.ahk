@@ -78,6 +78,10 @@ F14::Tab ; Restore default behavior for Tab
 ; Restore absent c-W behavior in certain applications
 ;
 
+; Calculator
+#IfWinActive Calculator
+^w::WinClose
+
 ; Discord
 #IfWinActive ahk_exe Discord.exe
 ^w::WinClose
