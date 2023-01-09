@@ -1,5 +1,7 @@
 #NoEnv
+#SingleInstance force
 #UseHook, On
+SetWorkingDir % A_ScriptDir
 SendMode Input
 
 ; Ensure capslock is off at all times
