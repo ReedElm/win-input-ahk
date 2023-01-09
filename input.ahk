@@ -77,7 +77,7 @@ F14::Tab ; Restore default behavior for Tab
 
 
 ;
-; Restore absent c-W behavior in certain applications
+; Restore absent c-w behavior in certain applications
 ;
 
 ; Calculator
