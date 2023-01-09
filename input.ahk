@@ -25,7 +25,7 @@ SetCapsLockState, AlwaysOff
 ; Ö
 +>!p::Send {U+00D6}
 ; ẞ
->!s::Send {U+1E9E}
+>!s::Send {U+00DF}
 ; €
 >!5::Send {U+20AC}
 
